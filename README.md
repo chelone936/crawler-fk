@@ -36,12 +36,13 @@ crawler-fk/
 
 1. Clone the repository:
    git clone https://github.com/chelone936/crawler-fk.git
+   
    cd crawler-fk
 
-2. Install dependencies:
+3. Install dependencies:
    pip install -r requirements.txt
 
-3. Configure environment:
+4. Configure environment:
    Setup your .env file in the root folder with:
    - MONGO_URI = YOUR_MONGO_DB_URI
    - DB_NAME = DATABASE_NAME
