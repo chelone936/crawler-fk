@@ -11,29 +11,29 @@ crawler-fk is a book data crawler and change tracking system designed to fetch, 
 * Rate Limiting & API Key Security: Protects endpoints with rate limits and API key authentication.
 * Celery Scheduler: Automates periodic crawling and reporting.
 
-## Directory Structure
 
-crawler-fk/
+## Project Structure
 
-requirements.txt     → Python dependencies
-README.md            → Project documentation
+requirements.txt     → Python dependencies  
+README.md            → Project documentation  
 
-api/                 → FastAPI application
-│── main.py          → API endpoints
-│── auth.py          → API key authentication
-│── schemas.py       → Pydantic models for API
+api/                 → FastAPI application  
+│── main.py          → API endpoints  
+│── auth.py          → API key authentication  
+│── schemas.py       → Pydantic models for API  
 
-crawler/             → Crawling and parsing logic
-│── main.py          → Entry point for crawling
-│── fetcher.py       → Fetches raw HTML
-│── parser.py        → Parses HTML to extract data
-│── db.py            → Database operations
-│── models.py        → Data models
+crawler/             → Crawling and parsing logic  
+│── main.py          → Entry point for crawling  
+│── fetcher.py       → Fetches raw HTML  
+│── parser.py        → Parses HTML to extract data  
+│── db.py            → Database operations  
+│── models.py        → Data models  
 
-scheduler/           → Celery beat and periodic tasks
-reports/             → Daily change reports (CSV/JSON)
-data/                → Raw or processed data storage
-logs/                → Log files
+scheduler/           → Celery beat and periodic tasks  
+reports/             → Daily change reports (CSV/JSON)  
+data/                → Raw or processed data storage  
+logs/                → Log files  
+
 
 
 ## Installation
