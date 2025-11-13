@@ -15,22 +15,26 @@ crawler-fk is a book data crawler and change tracking system designed to fetch, 
 
 crawler-fk/
 
-├── requirements.txt           - Python dependencies
-├── README.md                  - Project documentation
-├── api/                       - FastAPI application
-│   ├── main.py                - API endpoints
-│   ├── auth.py                - API key authentication
-│   ├── schemas.py             - Pydantic models for API
-├── crawler/                   - Crawling and parsing logic
-│   ├── main.py                - Entry point for crawling
-│   ├── fetcher.py             - Fetches raw HTML
-│   ├── parser.py              - Parses HTML to extract data
-│   ├── db.py                  - Database operations
-│   ├── models.py              - Data models
-├── scheduler/                 - Celery beat and periodic tasks
-├── reports/                   - Daily change reports (CSV/JSON)
-├── data/                      - Raw or processed data storage
-├── logs/                      - Log files
+requirements.txt     → Python dependencies
+README.md            → Project documentation
+
+api/                 → FastAPI application
+│── main.py          → API endpoints
+│── auth.py          → API key authentication
+│── schemas.py       → Pydantic models for API
+
+crawler/             → Crawling and parsing logic
+│── main.py          → Entry point for crawling
+│── fetcher.py       → Fetches raw HTML
+│── parser.py        → Parses HTML to extract data
+│── db.py            → Database operations
+│── models.py        → Data models
+
+scheduler/           → Celery beat and periodic tasks
+reports/             → Daily change reports (CSV/JSON)
+data/                → Raw or processed data storage
+logs/                → Log files
+
 
 ## Installation
 
