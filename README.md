@@ -29,7 +29,16 @@ crawler/             → Crawling and parsing logic
 │── db.py            → Database operations  
 │── models.py        → Data models  
 
-scheduler/           → Celery beat and periodic tasks  
+scheduler/           → Scheduling & periodic tasks
+│── celery_app.py    → Setting up celery with the tasks
+│── send_test.py     → Sends the tasks to the worker
+│── tasks.py         → Contains the daily report and crawling task logic
+
+tests/               → Tests for the API, crawler and scheduler
+│── test_api.py      → Contains tests for the API
+│── test_crawler.py  → Contains tests for the crawler
+│── test_scheduler.py    → Contains tests for the scheduler
+
 reports/             → Daily change reports (CSV/JSON)  
 data/                → Raw or processed data storage  
 logs/                → Log files  
@@ -75,6 +84,9 @@ logs/                → Log files
 
    * reports/daily_changes_YYYYMMDD_HHMMSS.csv
    * reports/daily_changes_YYYYMMDD_HHMMSS.json
+
+6. Tests
+   Run 'pytest' in the command line at the root director which will execute the tasks for the API, crawler and scheduler.
 
 ## API Endpoints
 
